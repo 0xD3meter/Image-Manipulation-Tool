@@ -21,3 +21,20 @@ A versatile command-line tool for image processing and manipulation with support
 - Python 3.6 or higher
 - Pillow library (PIL fork)
 
+## 🚀 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/0xD3meter/image-manipulation-tool.git
+cd image-manipulation-tool
+```
+
+2. Install requirements:
+```bash
+pip install -r requirements.txt
+```
+
+3. Make the script executable (Unix/Linux/macOS):
+```bash
+chmod +x main.py
+```
