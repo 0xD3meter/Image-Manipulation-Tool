@@ -44,3 +44,49 @@ chmod +x main.py
 ```bash
 python main.py <input_image_or_directory> [options]
 ```
+
+## ⚙️ Options
+
+### Input/Output Options:
+- `input`: Input image file or directory (required)
+- `-o, --output`: Output file or directory
+- `--batch`: Process all images in input directory
+- `-r, --recursive`: Recursively process subdirectories
+
+### Transformation Options:
+- `--resize`: Resize image (WIDTHxHEIGHT, WIDTH, or scale factor)
+- `--crop`: Crop image (left,top,right,bottom)
+- `--rotate`: Rotate image by degrees
+
+### Filter and Adjustment Options:
+- `--filter`: Apply a filter (blur, sharpen, grayscale, sepia, etc.)
+- `--brightness`: Adjust brightness (0.0-2.0)
+- `--contrast`: Adjust contrast (0.0-2.0)
+- `--sharpness`: Adjust sharpness (0.0-2.0)
+- `--color`: Adjust color saturation (0.0-2.0)
+
+### Output Format Options:
+- `--format`: Output format (jpg, png, webp, etc.)
+- `--quality`: Output quality for JPG/JPEG/WebP (1-100)
+
+### Decoration Options:
+- `--border`: Add border with specified width
+- `--border-color`: Border color (name or #RRGGBB)
+- `--watermark`: Add text watermark
+- `--watermark-position`: Watermark position
+- `--watermark-opacity`: Watermark opacity (0.0-1.0)
+- `--watermark-size`: Watermark font size
+- `--watermark-color`: Watermark color (name or #RRGGBB)
+
+### Information Options:
+- `--info`: Display image information
+
+## 📝 Examples
+
+### Basic Operations:
+
+#### Resize an image:
+```bash
+python main.py image.jpg --resize 800x600
+```
+
