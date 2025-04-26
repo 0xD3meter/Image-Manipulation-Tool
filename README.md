@@ -125,3 +125,35 @@ python main.py <input_image_or_directory> [options]
   python main.py image.jpg --format png
   ```
 
+### Decorations:
+
+#### Add a border:
+  ```bash
+  python main.py image.jpg --border 10 --border-color red
+  ```
+  
+#### Add a watermark:
+  ```bash
+  python main.py image.jpg --watermark "Copyright 2023" --watermark-position bottom-right
+  ```
+  
+### Batch Processing:
+
+#### Process all images in a directory:
+  ```bash
+  python main.py photos/ --batch --filter sepia --output processed/
+  ```
+
+#### Recursively process subdirectories:
+  ```bash
+  python main.py photos/ --batch --recursive --resize 0.5 --output processed/
+  ```
+
+### Information:
+
+#### Display image information:
+  ```bash
+  python main.py image.jpg --info
+  ```
+  
+  
