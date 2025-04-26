@@ -15,3 +15,9 @@ A versatile command-line tool for image processing and manipulation with support
 - ©️ Add text watermarks with position control
 - 📊 Display image information and EXIF data
 - 📁 Process multiple images in batch mode
+
+## 📋 Requirements
+
+- Python 3.6 or higher
+- Pillow library (PIL fork)
+
