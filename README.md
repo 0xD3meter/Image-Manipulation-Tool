@@ -86,7 +86,42 @@ python main.py <input_image_or_directory> [options]
 ### Basic Operations:
 
 #### Resize an image:
-```bash
-python main.py image.jpg --resize 800x600
-```
+  ```bash
+  python main.py image.jpg --resize 800x600
+  ```
+#### Resize to specific width (keep aspect ratio):
+  ```bash
+  python main.py image.jpg --resize 800
+  ```
+
+#### Resize to 50% of original size:
+  ```bash
+  python main.py image.jpg --resize 0.5
+  ```
+#### Crop an image:
+  ```bash
+  python main.py image.jpg --crop 100,50,700,550
+  ```
+  
+#### Rotate an image:
+  ```bash
+  python main.py image.jpg --rotate 90
+  ```
+  
+### Filters and Adjustments:
+
+#### Apply a filter:
+  ```bash
+  python main.py image.jpg --filter grayscale
+  ```
+  
+#### Adjust brightness and contrast:
+  ```bash
+  python main.py image.jpg --brightness 1.2 --contrast 1.1
+  ```
+  
+#### Convert to another format:
+  ```bash
+  python main.py image.jpg --format png
+  ```
 
