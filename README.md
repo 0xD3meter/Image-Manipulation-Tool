@@ -38,3 +38,9 @@ pip install -r requirements.txt
 ```bash
 chmod +x main.py
 ```
+
+## 🔍 Usage
+
+```bash
+python main.py <input_image_or_directory> [options]
+```
