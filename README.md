@@ -156,4 +156,64 @@ python main.py <input_image_or_directory> [options]
   python main.py image.jpg --info
   ```
   
-  
+## 🎨 Filter Options
+
+The tool supports the following filters and effects:
+
+- `blur`: Gaussian blur effect
+- `contour`: Contour effect highlighting edges
+- `detail`: Enhance details
+- `edge_enhance`: Enhance edges
+- `edge_enhance_more`: Enhance edges more strongly
+- `emboss`: Emboss effect
+- `find_edges`: Find and highlight edges
+- `sharpen`: Sharpen image
+- `smooth`: Smooth image
+- `smooth_more`: Stronger smoothing
+- `gaussian_blur`: Gaussian blur with control
+- `box_blur`: Box blur effect
+- `grayscale`: Convert to black and white
+- `sepia`: Apply vintage sepia tone
+- `invert`: Invert colors
+- `mirror`: Mirror image horizontally
+- `flip`: Flip image vertically
+- `auto_contrast`: Enhance contrast automatically
+
+## 🧩 Advanced Usage
+
+### Combining Multiple Operations
+
+You can combine multiple operations in a single command. Operations are applied in this order:
+1. Rotate
+2. Crop
+3. Resize
+4. Filters and adjustments
+5. Border
+6. Watermark
+
+Example:
+```bash
+python main.py image.jpg --rotate 90 --crop 50,50,450,450 --resize 800 --filter sepia --border 5 --border-color black --watermark "Copyright"
+```
+
+### Working with Crop Coordinates
+Crop coordinates can be specified in pixels or as fractions of the image size:
+
+- Pixels: `--crop 100,100,700,500`
+- Fractions: `--crop 0.1,0.1,0.9,0.9` (crops 10% from each edge)
+
+### Using Different Border Colors
+Border colors can be specified by name or hexadecimal code:
+
+- Named color: `--border 10 --border-color blue`
+- Hex color: `--border 10 --border-color "#FF5500"`
+
+### Watermark Customization
+Customize watermarks with various options:
+```bash
+python main.py image.jpg --watermark "© YourName" --watermark-position bottom-right --watermark-opacity 0.7 --watermark-size 24 --watermark-color white
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
