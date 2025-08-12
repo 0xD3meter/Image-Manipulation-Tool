@@ -213,9 +213,3 @@ Customize watermarks with various options:
 ```bash
 python main.py image.jpg --watermark "© YourName" --watermark-position bottom-right --watermark-opacity 0.7 --watermark-size 24 --watermark-color white
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Have fun!
